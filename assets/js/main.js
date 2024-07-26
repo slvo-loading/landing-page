@@ -118,16 +118,20 @@
 		var app = document.getElementById('app');
 
 		var typewriter = new Typewriter(app, {
-			loop: true
+			loop: true,
+			delay:100
 		});
 
 		typewriter.typeString('Aspiring Software Engineer')
-			.pauseFor(2500)
+			.pauseFor(1000)
+			.deleteChars(17)
+			.typeString('Graphic Designer')
+			.pauseFor(1000)
 			.deleteAll()
 			.typeString('Bridging Code with Creativity')
-			.pauseFor(2500)
-			.typeString(', one <strong>byte</strong> at a time!')
-			.pauseFor(2500)
+			.pauseFor(1000)
+			.typeString(', One <strong>Byte</strong> at a Time!')
+			.pauseFor(1000)
 			.start();
 
 		var app = document.getElementById('pop-cat');
@@ -155,10 +159,12 @@
 			.typeString(' When you\'re in your darkest place')
 			.pauseFor(1000)
 			.typeString(', you give yourself hope and that\'s <strong>inner strength</strong>." - Uncle Iroh')
+			.pauseFor(1000)
 			.deleteAll()
 			.typeString('"If my life is going to <strong>mean</strong> anything')
 			.pauseFor(1000)
 			.typeString(', I have to <strong>live</strong> it myself" - Percy Jackson')
+			.pauseFor(1000)
 			.deleteAll()
 			.pauseFor(1000)
 

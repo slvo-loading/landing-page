@@ -3950,8 +3950,6 @@ div.scroll-container {
   
 div.scroll-container img {
 	padding: 10px;
-	width:25%;
-	height:25%
 }
 
 ::-webkit-scrollbar {
