@@ -115,9 +115,61 @@
 
 		}
 
+		var app = document.getElementById('app');
+
+		var typewriter = new Typewriter(app, {
+			loop: true
+		});
+
+		typewriter.typeString('Aspiring Software Engineer')
+			.pauseFor(2500)
+			.deleteAll()
+			.typeString('Bridging Code with Creativity')
+			.pauseFor(2500)
+			.typeString(', one <strong>byte</strong> at a time!')
+			.pauseFor(2500)
+			.start();
+
+		var app = document.getElementById('pop-cat');
+
+		var typewriter = new Typewriter(app, {
+			loop: true,
+			delay: 85
+		});
+
+		typewriter.typeString('"Improving by <strong>1%</strong> isn\'t particluarly <strong>notable</strong>')
+			.pauseFor(1000)
+			.typeString('—sometimes it isn\'t even <strong>noticeable</strong>')
+			.pauseFor(1000)
+			.typeString('—but it can be far more <strong>meaningful</strong>')
+			.pauseFor(1000)
+			.typeString(', especially in the long run"- James Clear')
+			.pauseFor(1000)
+			.deleteAll()
+			.typeString('"You can\'t always see the light at the end of the tunnel')
+			.pauseFor(1000)
+			.typeString(', but <strong>if you just keep moving</strong> ...')
+			.pauseFor(1000)
+			.typeString('you will come to a better place.')
+			.pauseFor(1000)
+			.typeString(' When you\'re in your darkest place')
+			.pauseFor(1000)
+			.typeString(', you give yourself hope and that\'s <strong>inner strength</strong>." - Uncle Iroh')
+			.deleteAll()
+			.typeString('"If my life is going to <strong>mean</strong> anything')
+			.pauseFor(1000)
+			.typeString(', I have to <strong>live</strong> it myself" - Percy Jackson')
+			.deleteAll()
+			.pauseFor(1000)
+
+			.start();
+
+
 	// Scrolly.
 		$('.scrolly').scrolly({
 			speed: 1000
 		});
+
+	
 
 })(jQuery);
